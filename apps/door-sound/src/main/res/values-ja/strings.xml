@@ -54,10 +54,10 @@
     <string name="door_right_rear">右後ドア</string>
     <string name="door_unknown">ドア %1$d</string>
 
-    <string name="log_opened">%1$s を開けた</string>
-    <string name="log_closed">%1$s を閉めた</string>
-    <string name="log_locked">車両をロック</string>
-    <string name="log_unlocked">車両をロック解除</string>
+    <string name="log_opened">%1$s 開</string>
+    <string name="log_closed">%1$s 閉</string>
+    <string name="log_locked">車両ロック</string>
+    <string name="log_unlocked">車両ロック解除</string>
     <string name="log_alarm">アラーム作動</string>
     <string name="log_window_open">窓の閉め忘れ</string>
 
@@ -66,7 +66,7 @@
         <item>ピンポン</item>
         <item>ポンピン</item>
         <item>トリプルビープ</item>
-        <item>高速交互</item>
+        <item>高速交互音</item>
         <item>ロングチャイム</item>
         <item>入店チャイム</item>
         <item>アラーム</item>

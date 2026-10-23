@@ -3,7 +3,7 @@
     <string name="app_name">Cabin</string>
 
     <string name="default_pet_name">ペット</string>
-    <string name="msg_safe">大丈夫！%s は安全です</string>
+    <string name="msg_safe">大丈夫！%sは安全です</string>
     <string name="msg_driver_back">飼い主はすぐ戻ります</string>
     <string name="msg_ac_on">エアコン作動中、快適です</string>
     <string name="msg_ac_off">エアコンは現在オフです</string>
@@ -18,18 +18,18 @@
     <string name="status_ac_off">エアコンOFF</string>
     <string name="status_car_off">車両OFF</string>
     <string name="status_battery">バッテリー: %d%%</string>
-    <string name="alert_ac_off">警告: エアコンがオフです</string>
+    <string name="alert_ac_off">警告: エアコンがオフ</string>
     <string name="status_doors_closed">ドア閉</string>
     <string name="status_doors_open">ドア開!</string>
     <string name="status_active">稼働 %s</string>
-    <string name="alert_door_open">警告: ドアが開いています</string>
+    <string name="alert_door_open">警告: ドア開放</string>
 
     <string name="exit_im_back">戻りました ←</string>
-    <string name="exit_confirm_title">キャビンを終了</string>
-    <string name="exit_confirm">ペットがまだ車内にいます。キャビンを終了しますか？</string>
+    <string name="exit_confirm_title">Cabinを終了</string>
+    <string name="exit_confirm">ペットがまだ車内にいます。Cabinを終了しますか？</string>
     <string name="sheet_stay">続ける</string>
 
-    <string name="notification_title">キャビン稼働中</string>
+    <string name="notification_title">Cabin 稼働中</string>
     <string name="notification_text">車内温度を監視中</string>
 
     <string name="settings_title">設定</string>
@@ -50,10 +50,10 @@
     <string name="unit_fahrenheit">°F</string>
     <string name="display_mode">表示</string>
     <string name="display_mode_auto">自動</string>
-    <string name="display_mode_beacon">車外表示</string>
+    <string name="display_mode_beacon">車外</string>
     <string name="display_mode_interior">車内</string>
     <string name="display_mode_desc">大きな高コントラスト表示。車外からも読めます</string>
-    <string name="climate_signal_lost">空調信号を喪失しました</string>
+    <string name="climate_signal_lost">空調の信号を受信できません</string>
     <string name="battery_low_warning">12Vバッテリー低下 — 空調が停止する場合あり</string>
     <string name="beacon_ac_on">エアコンON</string>
     <string name="beacon_ac_off">エアコンOFF</string>

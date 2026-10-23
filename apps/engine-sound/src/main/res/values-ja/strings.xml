@@ -31,7 +31,7 @@
     <string name="cycle_needs_sim">先にエンジン音をオンにしてください</string>
     <string name="cycle_stopped">プリセット %1$d で巡回を停止しました</string>
 
-    <string name="preset_rejected">車両がプリセット %1$d を拒否 — %2$d のままです</string>
+    <string name="preset_rejected">車両がプリセット %1$d を拒否しました — %2$d のままです</string>
     <string name="write_failed">車両がプリセット %1$d を拒否しました</string>
     <string name="read_failed">車両からプリセットを読み戻せません</string>
 
