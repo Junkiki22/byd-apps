@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Door Sound</string>
+    <string name="app_tagline">BYD用カスタムサウンド</string>
+    <string name="service_channel">Door Sound サービス</string>
+    <string name="service_running">車両イベントを待機中…</string>
+    <string name="enabled">有効</string>
+    <string name="diagnostics">診断</string>
+    <string name="diag_refresh">更新</string>
+
+    <string name="park_watch_minutes">駐車監視: %1$d分</string>
+    <string name="park_watch_always">駐車監視: 常時</string>
+    <string name="autostart_button">BYD自動起動</string>
+    <string name="autostart_button_check">BYD自動起動 — 確認</string>
+    <string name="autostart_hint">BYDのリストでONの行は自動起動がブロックされた状態です。そこでDoor SoundをOFFにし、アップデートのたびに再確認してください。</string>
+    <string name="autostart_missing">この車載機にはBYD自動起動の画面がありません。</string>
+
+    <string name="select_file">選択</string>
+    <string name="select_audio_file">音声ファイルを選択</string>
+    <string name="clear">クリア</string>
+    <string name="no_file_selected">ファイル未選択</string>
+    <string name="volume">音量</string>
+    <string name="pattern">パターン</string>
+    <string name="preview">試聴</string>
+
+    <string name="service_status">状態</string>
+    <string name="status_running">動作中</string>
+    <string name="status_stopped">停止</string>
+    <string name="last_event">最後のイベント</string>
+    <string name="no_events_yet">イベントなし</string>
+
+    <string name="tab_inside">車内スピーカー</string>
+    <string name="tab_outside">車外スピーカー</string>
+    <string name="hint_inside">自分の音声ファイルを車内スピーカーで再生します。</string>
+    <string name="hint_outside">車外スピーカーの車両接近通報音(AVAS)。カスタム音声はここへ出力できません。</string>
+
+    <string name="event_door_open">ドア開</string>
+    <string name="event_door_close">ドア閉</string>
+    <string name="event_lock">ロック</string>
+    <string name="event_unlock">ロック解除</string>
+    <string name="event_hood">ボンネット</string>
+    <string name="event_trunk">トランク</string>
+    <string name="event_alarm">アラーム</string>
+    <string name="event_window">窓の閉め忘れ</string>
+
+    <string name="warn_master_off">再生されません: 「有効」がオフです</string>
+    <string name="warn_event_off">再生されません: オフになっています</string>
+    <string name="warn_no_file">再生されません: ファイル未選択</string>
+    <string name="warn_no_pattern">再生されません: パターン未選択</string>
+
+    <string name="door_left_front">左前ドア</string>
+    <string name="door_right_front">右前ドア</string>
+    <string name="door_left_rear">左後ドア</string>
+    <string name="door_right_rear">右後ドア</string>
+    <string name="door_unknown">ドア %1$d</string>
+
+    <string name="log_opened">%1$s を開けた</string>
+    <string name="log_closed">%1$s を閉めた</string>
+    <string name="log_locked">車両をロック</string>
+    <string name="log_unlocked">車両をロック解除</string>
+    <string name="log_alarm">アラーム作動</string>
+    <string name="log_window_open">窓の閉め忘れ</string>
+
+    <string-array name="pattern_names">
+        <item>なし</item>
+        <item>ピンポン</item>
+        <item>ポンピン</item>
+        <item>トリプルビープ</item>
+        <item>高速交互</item>
+        <item>ロングチャイム</item>
+        <item>入店チャイム</item>
+        <item>アラーム</item>
+        <item>ファンファーレ</item>
+    </string-array>
+</resources>

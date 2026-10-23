@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Engine Sound</string>
+    <string name="app_title">エンジンサウンド</string>
+    <string name="dash">—</string>
+
+    <string name="preset_label">プリセット</string>
+    <string name="preset_fallback">プリセット %1$d</string>
+    <string name="choose_preset">全プリセット</string>
+    <string name="rename_hint">プリセットを長押しで名前を付けられます</string>
+    <string name="rename_title">プリセット %1$d の名前</string>
+    <string name="rename_save">保存</string>
+    <string name="rename_reset">リセット</string>
+    <string name="cancel">キャンセル</string>
+
+    <string name="sim_label">エンジン音</string>
+    <string name="btn_prev">‹ 前</string>
+    <string name="btn_next">次 ›</string>
+    <string name="cycle_all">全プリセットを巡回</string>
+    <string name="cycle_stop">巡回を停止</string>
+
+    <string name="status_connecting">接続中…</string>
+    <string name="sim_on">プリセット %1$d · 音ON</string>
+    <string name="sim_off">プリセット %1$d · 音OFF</string>
+    <string name="sim_turning_off">音OFF</string>
+    <string name="sim_verify_failed">車両が音ONを確認しませんでした</string>
+    <string name="sim_dropped">車両がエンジン音を再びオフにしました — プリセット %1$d は保持</string>
+    <string name="vehicle_panel_idle">車両を読み取り中…</string>
+    <string name="sim_write_failed">車両が %1$s を拒否しました</string>
+    <string name="cycling_now">プリセット %1$d · 巡回中</string>
+    <string name="cycle_needs_sim">先にエンジン音をオンにしてください</string>
+    <string name="cycle_stopped">プリセット %1$d で巡回を停止しました</string>
+
+    <string name="preset_rejected">車両がプリセット %1$d を拒否 — %2$d のままです</string>
+    <string name="write_failed">車両がプリセット %1$d を拒否しました</string>
+    <string name="read_failed">車両からプリセットを読み戻せません</string>
+
+    <string name="err_service_null">車両サービスが利用できません</string>
+    <string name="err_service">車両サービスエラー: %1$s</string>
+    <string name="sim_unsupported">この車両はエンジンシミュレータ非対応です (%1$d)</string>
+    <string name="sim_unreadable">車両からシミュレータ対応状況を読めません</string>
+    <string name="preset_note">車はどのプリセット番号も受け付けますが、音が変わるのは一部だけです。聴いてみて、聞こえたものを長押しで名前を付けてください。</string>
+</resources>

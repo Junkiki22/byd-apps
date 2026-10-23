@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cabin</string>
+
+    <string name="default_pet_name">ペット</string>
+    <string name="msg_safe">大丈夫！%s は安全です</string>
+    <string name="msg_driver_back">飼い主はすぐ戻ります</string>
+    <string name="msg_ac_on">エアコン作動中、快適です</string>
+    <string name="msg_ac_off">エアコンは現在オフです</string>
+    <string name="msg_monitoring">ペットを見守り中</string>
+
+    <string name="outside_temp">外気温: %1$d%2$s</string>
+    <string name="outside_temp_pill">外 %1$d%2$s</string>
+    <string name="outside_temp_pill_unknown">外 --</string>
+    <string name="set_temperature">設定温度</string>
+
+    <string name="status_ac_on">エアコンON</string>
+    <string name="status_ac_off">エアコンOFF</string>
+    <string name="status_car_off">車両OFF</string>
+    <string name="status_battery">バッテリー: %d%%</string>
+    <string name="alert_ac_off">警告: エアコンがオフです</string>
+    <string name="status_doors_closed">ドア閉</string>
+    <string name="status_doors_open">ドア開!</string>
+    <string name="status_active">稼働 %s</string>
+    <string name="alert_door_open">警告: ドアが開いています</string>
+
+    <string name="exit_im_back">戻りました ←</string>
+    <string name="exit_confirm_title">キャビンを終了</string>
+    <string name="exit_confirm">ペットがまだ車内にいます。キャビンを終了しますか？</string>
+    <string name="sheet_stay">続ける</string>
+
+    <string name="notification_title">キャビン稼働中</string>
+    <string name="notification_text">車内温度を監視中</string>
+
+    <string name="settings_title">設定</string>
+    <string name="settings_pet_name">ペットの名前</string>
+    <string name="settings_avatar">アバター</string>
+    <string name="settings_temp_unit">温度単位</string>
+    <string name="settings_dark_mode">ダークモード</string>
+    <string name="settings_dark_mode_desc">画面を暗く — 車外から見えにくく</string>
+    <string name="settings_temp_unit_desc">摂氏と華氏を切り替え</string>
+    <string name="settings_version">Cabin v2.2.0  ·  BYD Dolphin · DiLink 3.0</string>
+
+    <string name="avatar_paw">肉球</string>
+    <string name="avatar_dog">犬</string>
+    <string name="avatar_cat">猫</string>
+
+    <string name="beacon_dash">--</string>
+    <string name="unit_celsius">°C</string>
+    <string name="unit_fahrenheit">°F</string>
+    <string name="display_mode">表示</string>
+    <string name="display_mode_auto">自動</string>
+    <string name="display_mode_beacon">車外表示</string>
+    <string name="display_mode_interior">車内</string>
+    <string name="display_mode_desc">大きな高コントラスト表示。車外からも読めます</string>
+    <string name="climate_signal_lost">空調信号を喪失しました</string>
+    <string name="battery_low_warning">12Vバッテリー低下 — 空調が停止する場合あり</string>
+    <string name="beacon_ac_on">エアコンON</string>
+    <string name="beacon_ac_off">エアコンOFF</string>
+    <string name="beacon_car_off">車両OFF</string>
+    <string name="beacon_doors_closed">ドア閉</string>
+    <string name="beacon_doors_open">ドア開</string>
+    <string name="beacon_outside">外 %1$d%2$s</string>
+    <string name="beacon_outside_unknown">外 --</string>
+</resources>
