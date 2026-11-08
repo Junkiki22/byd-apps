@@ -17,7 +17,6 @@
 
     <string name="select_file">選択</string>
     <string name="select_audio_file">音声ファイルを選択</string>
-    <string name="no_audio_in_folder">音源ファイルがありません。\n\n.mp3 / .wav / .ogg ファイルを次のフォルダに入れてから、もう一度「選択」を押してください:\n\n%s</string>
     <string name="clear">クリア</string>
     <string name="no_file_selected">ファイル未選択</string>
     <string name="volume">音量</string>
@@ -32,7 +31,7 @@
 
     <string name="tab_inside">車内スピーカー</string>
     <string name="tab_outside">車外スピーカー</string>
-    <string name="hint_inside">自分の音声ファイルを車内スピーカーで再生します。本体ストレージの DoorSound フォルダに音源を入れてから「選択」を押します。</string>
+    <string name="hint_inside">自分の音声ファイルを車内スピーカーで再生します。</string>
     <string name="hint_outside">車外スピーカーの車両接近通報音(AVAS)。カスタム音声はここへ出力できません。</string>
 
     <string name="event_door_open">ドア開</string>

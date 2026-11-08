@@ -536,7 +536,7 @@ public class MainActivity extends Activity implements PetModeService.StateCallba
         long millis = service.getActiveMillis();
         long mins = (millis / 60000) % 60;
         long hours = millis / 3600000;
-        return getString(R.string.duration_fmt, hours, mins);
+        return String.format(Locale.US, "%02dh %02dmin", hours, mins);
     }
 
     private String getDefaultUnit() {

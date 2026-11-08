@@ -39,5 +39,5 @@
     <string name="err_service">車両サービスエラー: %1$s</string>
     <string name="sim_unsupported">この車両はエンジンシミュレータ非対応です (%1$d)</string>
     <string name="sim_unreadable">車両からシミュレータ対応状況を読めません</string>
-    <string name="preset_note">鳴るのは低速走行中(〜30km/h)の車外スピーカーだけで、停車中は無音です。車はどのプリセット番号も受け付けますが、音が変わるのは一部だけ。走りながら聴いて、聞こえたものを長押しで名前を付けてください。</string>
+    <string name="preset_note">車はどのプリセット番号も受け付けますが、音が変わるのは一部だけです。聴いてみて、聞こえたものを長押しで名前を付けてください。</string>
 </resources>
