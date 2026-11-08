@@ -1,0 +1,29 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- background -->
+    <path
+        android:fillColor="#1565C0"
+        android:pathData="M20,6 L88,6 A14,14 0 0 1 102,20 L102,88 A14,14 0 0 1 88,102 L20,102 A14,14 0 0 1 6,88 L6,20 A14,14 0 0 1 20,6 Z" />
+    <!-- upload signal arrow (sending to HA) -->
+    <path
+        android:fillColor="#8BE0C6"
+        android:pathData="M54,17 L63,28 L58,28 L58,36 L50,36 L50,28 L45,28 Z" />
+    <!-- car body -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M26,62 C26,57 28,55 33,54 L39,46 C41,43 43,42 46,42 L62,42 C65,42 67,43 69,46 L76,54 C81,55 82,57 82,62 L82,64 C82,66 81,67 79,67 L31,67 C27,67 26,66 26,64 Z" />
+    <!-- windows -->
+    <path
+        android:fillColor="#1565C0"
+        android:pathData="M41,47 L46,47 L46,53 L36.5,53 Z M49,47 L62,47 L67,53 L49,53 Z" />
+    <!-- wheels -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M40,68 m-7,0 a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0 M68,68 m-7,0 a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0" />
+    <path
+        android:fillColor="#1565C0"
+        android:pathData="M40,68 m-3,0 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0 M68,68 m-3,0 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0" />
+</vector>

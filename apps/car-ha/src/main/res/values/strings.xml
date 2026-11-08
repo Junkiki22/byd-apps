@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Car HA Bridge</string>
+    <string name="subtitle">車のデータをHome Assistantへ送信（ADB不要）</string>
+    <string name="url_label">Webhook URL（送信先）</string>
+    <string name="save">保存</string>
+    <string name="saved">保存しました</string>
+    <string name="wifi_only">WiFi接続時のみ送信する</string>
+    <string name="start">送信を開始</string>
+    <string name="stop">送信を停止</string>
+    <string name="send_now">今すぐ送信</string>
+    <string name="sending">送信中…</string>
+    <string name="state">状態: </string>
+    <string name="last_values">最新値: </string>
+    <string name="last_result">送信結果: </string>
+    <string name="last_sent">最終送信: </string>
+    <string name="status_idle">停止中。「送信を開始」で常駐送信、「今すぐ送信」で1回だけ送ります。</string>
+    <string name="notif_text">車両データを送信中</string>
+</resources>
