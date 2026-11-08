@@ -2,6 +2,7 @@ package com.wheregoes.doorsound;
 
 import android.Manifest;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
@@ -9,6 +10,7 @@ import android.database.Cursor;
 import android.media.AudioManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.os.Looper;
 import android.provider.OpenableColumns;
@@ -26,6 +28,7 @@ import android.widget.Toast;
 import com.wheregoes.byd.AutoStart;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 
@@ -273,13 +276,10 @@ public class MainActivity extends Activity {
         seekBar.setOnSeekBarChangeListener(
                 new VolumeChangeListener(volLabel, event.volumeKey, prefs));
 
-        card.findViewById(R.id.card_btn_select).setOnClickListener(v -> {
-            Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-            intent.setType("audio/*");
-            intent.addCategory(Intent.CATEGORY_OPENABLE);
-            startActivityForResult(
-                    Intent.createChooser(intent, getString(R.string.select_audio_file)), reqCode);
-        });
+        // DiLink has no Google account, so ACTION_GET_CONTENT dead-ends on an
+        // account-setup screen. Pick from a fixed public folder instead.
+        card.findViewById(R.id.card_btn_select).setOnClickListener(v ->
+                chooseFromFolder(event));
 
         TextView fileLabel = card.findViewById(R.id.card_file_label);
         card.findViewById(R.id.card_btn_clear).setOnClickListener(v -> {
@@ -391,6 +391,83 @@ public class MainActivity extends Activity {
     }
 
     // ------------------------------------------------------------ file picking
+
+    /** Public folder the user drops audio files into; no document picker needed. */
+    static final String SOUND_DIR_NAME = "DoorSound";
+
+    private File soundFolder() {
+        File dir = new File(Environment.getExternalStorageDirectory(), SOUND_DIR_NAME);
+        if (!dir.exists()) {
+            dir.mkdirs();
+        }
+        return dir;
+    }
+
+    private void chooseFromFolder(SoundEvent event) {
+        File dir = soundFolder();
+        File[] files = dir.listFiles((d, name) -> {
+            String n = name.toLowerCase(java.util.Locale.ROOT);
+            return n.endsWith(".mp3") || n.endsWith(".wav") || n.endsWith(".ogg")
+                    || n.endsWith(".m4a") || n.endsWith(".aac");
+        });
+        if (files == null || files.length == 0) {
+            new AlertDialog.Builder(this)
+                    .setTitle(R.string.select_audio_file)
+                    .setMessage(getString(R.string.no_audio_in_folder, dir.getAbsolutePath()))
+                    .setPositiveButton(android.R.string.ok, null)
+                    .show();
+            return;
+        }
+        java.util.Arrays.sort(files, (a, b) -> a.getName().compareToIgnoreCase(b.getName()));
+        final File[] picked = files;
+        final String[] names = new String[files.length];
+        for (int i = 0; i < files.length; i++) {
+            names[i] = files[i].getName();
+        }
+        new AlertDialog.Builder(this)
+                .setTitle(R.string.select_audio_file)
+                .setItems(names, (dlg, which) -> applyChosenFile(event, picked[which]))
+                .setNegativeButton(android.R.string.cancel, null)
+                .show();
+    }
+
+    private void applyChosenFile(SoundEvent event, File src) {
+        String previous = prefs.getString(event.pathKey, null);
+        String localPath = copyFileToLocal(src);
+        if (localPath == null) {
+            return;
+        }
+        if (previous != null && !previous.equals(localPath)) {
+            new File(previous).delete();
+        }
+        // Choosing a sound is an unambiguous request for that sound to play.
+        prefs.edit()
+                .putString(event.pathKey, localPath)
+                .putBoolean(event.enabledKey, true)
+                .apply();
+        Switch sw = insideCards[event.index].findViewById(R.id.card_switch);
+        sw.setChecked(true);
+        styleSwitch(sw, true);
+        updateFileLabels();
+        refreshAllWarnings();
+    }
+
+    private String copyFileToLocal(File src) {
+        File dir = new File(getFilesDir(), "sounds");
+        dir.mkdirs();
+        File dest = new File(dir, src.getName());
+        try (InputStream in = new FileInputStream(src);
+             FileOutputStream out = new FileOutputStream(dest)) {
+            byte[] buf = new byte[8192];
+            int len;
+            while ((len = in.read(buf)) > 0) {
+                out.write(buf, 0, len);
+            }
+            return dest.getAbsolutePath();
+        } catch (Exception e) {
+            return null;
+        }
+    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {

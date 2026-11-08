@@ -3,8 +3,8 @@
     <string name="app_name">Cabin</string>
 
     <string name="default_pet_name">ペット</string>
-    <string name="msg_safe">大丈夫！%sは安全です</string>
-    <string name="msg_driver_back">飼い主はすぐ戻ります</string>
+    <string name="msg_safe">大丈夫！\n%sは安全です</string>
+    <string name="msg_driver_back">飼い主はすぐ\n戻ります</string>
     <string name="msg_ac_on">エアコン作動中、快適です</string>
     <string name="msg_ac_off">エアコンは現在オフです</string>
     <string name="msg_monitoring">ペットを見守り中</string>
@@ -22,6 +22,7 @@
     <string name="status_doors_closed">ドア閉</string>
     <string name="status_doors_open">ドア開!</string>
     <string name="status_active">稼働 %s</string>
+    <string name="duration_fmt">%1$d時間%2$d分</string>
     <string name="alert_door_open">警告: ドア開放</string>
 
     <string name="exit_im_back">戻りました ←</string>

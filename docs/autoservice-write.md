@@ -21,7 +21,7 @@ service call autoservice 6 i32 1000 i32 501219355 i32 0 → 元に戻した（�
 BYDMate（`app/src/main/assets/competitor-actions.json` と `WriteAllowlist.kt` の LIVE_VALIDATED）。
 - エアコン: dev1000（ac_power 501219364 / 温度 501219368 / 風量 501219340 / 内外気 501219355 …）
 - 窓: dev1001 fid 1125122104(運転席) / 1125122107(助手席) / 1125122112(左後) / 1125122115(右後)、値 1=開 2=閉 3=停止 4=半開 5=換気
-- LIVE_VALIDATED は Leopard 3 / Seagull での確認。**ドルフィンで確認済みは内外気のみ**。
+- LIVE_VALIDATED は Leopard 3 / Seagull での確認。**ドルフィンで確認済み＝エアコン系（電源・温度・風量・内外気。電源OFF→ONは本人が実車で目視確認）。窓は不可（下の追加検証）**。
 - BYDMate は dev 1004/1006/1007/1009/1011/1012/1013/1014/1016/1023/1032（ライト・駆動・ギア・充電・BMS・タイヤ・電源・ドアロック）への書き込みを禁止している。car-ha も同じ方針にする。
 
 ## 制約

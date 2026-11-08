@@ -39,5 +39,5 @@
     <string name="err_service">Vehicle service error: %1$s</string>
     <string name="sim_unsupported">Engine simulator not supported on this vehicle (%1$d)</string>
     <string name="sim_unreadable">Cannot read simulator capability from the vehicle</string>
-    <string name="preset_note">The car accepts any preset number, but only some produce a different sound. Listen, then long-press to name the ones you can hear.</string>
+    <string name="preset_note">Only audible while driving slowly (under ~30 km/h) through the exterior speaker — silent when parked. The car accepts any preset number, but only some produce a different sound. Listen while driving, then long-press to name the ones you can hear.</string>
 </resources>

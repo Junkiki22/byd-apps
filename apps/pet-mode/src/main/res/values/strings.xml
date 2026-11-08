@@ -22,6 +22,7 @@
     <string name="status_doors_closed">Doors Closed</string>
     <string name="status_doors_open">Door Open!</string>
     <string name="status_active">Active for %s</string>
+    <string name="duration_fmt">%1$02dh %2$02dmin</string>
     <string name="alert_door_open">WARNING: DOOR OPEN</string>
 
     <string name="exit_im_back">I\'m back ←</string>
